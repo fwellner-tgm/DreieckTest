@@ -81,7 +81,7 @@ public class TestIstDreieck {
 
 		assertFalse(dreieck.istDreieck());
 	}
-	
+
 	@Test
 	public void istDreieckSeiteAPlusSeiteCGleichB() {
 		dreieck.setSeite_a(1);
@@ -90,7 +90,7 @@ public class TestIstDreieck {
 
 		assertFalse(dreieck.istDreieck());
 	}
-	
+
 	@Test
 	public void istDreieckSeiteCPlusSeiteBGleichA() {
 		dreieck.setSeite_c(1);
@@ -99,34 +99,34 @@ public class TestIstDreieck {
 
 		assertFalse(dreieck.istDreieck());
 	}
-	
+
 	@Test
 	public void istDreieckSeiteAPlusSeiteBKleinerNull() {
-		dreieck.setSeite_a(Integer.MAX_VALUE-1);
+		dreieck.setSeite_a(Integer.MAX_VALUE - 1);
 		dreieck.setSeite_b(2);
 		dreieck.setSeite_c(1);
-		
+
 		assertFalse(dreieck.istDreieck());
 	}
-	
+
 	@Test
 	public void istDreieckSeiteBPlusSeiteCKleinerNull() {
 		dreieck.setSeite_a(1);
-		dreieck.setSeite_b(Integer.MAX_VALUE-1);
+		dreieck.setSeite_b(Integer.MAX_VALUE - 1);
 		dreieck.setSeite_c(2);
 
 		assertFalse(dreieck.istDreieck());
 	}
-	
+
 	@Test
 	public void istDreieckSeiteAPlusSeiteCKleinerNull() {
-		dreieck.setSeite_a(Integer.MAX_VALUE-1);
+		dreieck.setSeite_a(Integer.MAX_VALUE - 1);
 		dreieck.setSeite_b(1);
 		dreieck.setSeite_c(2);
 
 		assertFalse(dreieck.istDreieck());
 	}
-	
+
 	@Test
 	public void istDreieckSeiteAPlusSeiteBKleinerC() {
 		dreieck.setSeite_a(1);
@@ -135,7 +135,7 @@ public class TestIstDreieck {
 
 		assertFalse(dreieck.istDreieck());
 	}
-	
+
 	@Test
 	public void istDreieckSeiteAPlusSeiteCKleinerB() {
 		dreieck.setSeite_a(1);
@@ -144,7 +144,7 @@ public class TestIstDreieck {
 
 		assertFalse(dreieck.istDreieck());
 	}
-	
+
 	@Test
 	public void istDreieckSeiteCPlusSeiteBKleinerA() {
 		dreieck.setSeite_a(4);
@@ -153,17 +153,15 @@ public class TestIstDreieck {
 
 		assertFalse(dreieck.istDreieck());
 	}
-	
+
 	@Test
 	public void istDreieckTrue() {
 		dreieck.setSeite_a(1);
 		dreieck.setSeite_b(1);
 		dreieck.setSeite_c(1);
 
-
 		assertTrue(dreieck.istDreieck());
 	}
-
 
 	@After
 	public void tearDown() throws Exception {
