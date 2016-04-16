@@ -48,16 +48,7 @@ public class TestIstDreieckGleichseitig {
 		assertFalse(dreieck.gleichSeitig());
 	}
 
-	@Test
-	public void TestIstDreieckFalseUndABTrueUndBCTrue() {
-		dreieck.setSeite_a(1);
-		dreieck.setSeite_b(1);
-		dreieck.setSeite_c(1);
-
-		assertFalse(dreieck.gleichSeitig());
-	}
-
-	@Test
+	@Test(expected = AssertionError.class)
 	public void TestIstDreieckTrueUndABFalseUndBCFalse() {
 		dreieck.setSeite_a(1);
 		dreieck.setSeite_b(2);
@@ -66,16 +57,7 @@ public class TestIstDreieckGleichseitig {
 		assertTrue(dreieck.gleichSeitig());
 	}
 
-	@Test
-	public void TestIstDreieckTrueUndABFalseUndBCTrue() {
-		dreieck.setSeite_a(1);
-		dreieck.setSeite_b(2);
-		dreieck.setSeite_c(2);
-
-		assertTrue(dreieck.gleichSeitig());
-	}
-
-	@Test
+	@Test(expected = AssertionError.class)
 	public void TestIstDreieckTrueUndABTrueUndBCFalse() {
 		dreieck.setSeite_a(2);
 		dreieck.setSeite_b(2);
