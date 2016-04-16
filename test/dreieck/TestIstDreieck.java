@@ -19,6 +19,10 @@ public class TestIstDreieck {
 		dreieck = new Dreieck(seite_a, seite_b, seite_c);
 	}
 
+	@After
+	public void tearDown() throws Exception {
+	}
+
 	@Test
 	public void istDreieckSeiteANull() {
 		dreieck.setSeite_a(0);
@@ -161,10 +165,6 @@ public class TestIstDreieck {
 		dreieck.setSeite_c(1);
 
 		assertTrue(dreieck.istDreieck());
-	}
-
-	@After
-	public void tearDown() throws Exception {
 	}
 
 }
