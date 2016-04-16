@@ -22,7 +22,7 @@ public class TestIstDreieckGleichschenkelig {
 	}
 
 	@Test
-	public void NurIstDreieckTrue() {
+	public void TestIstNurDreieckTrue() {
 		this.dreieck.setSeite_a(3);
 		this.dreieck.setSeite_b(2);
 		this.dreieck.setSeite_c(4);
@@ -31,7 +31,7 @@ public class TestIstDreieckGleichschenkelig {
 	}
 
 	@Test
-	public void NurIstDreieckFalse() {
+	public void TestIstNurDreieckFalse() {
 		this.dreieck.setSeite_a(0);
 		this.dreieck.setSeite_b(0);
 		this.dreieck.setSeite_c(0);
