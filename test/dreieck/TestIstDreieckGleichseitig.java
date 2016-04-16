@@ -22,7 +22,25 @@ public class TestIstDreieckGleichseitig {
 	}
 
 	@Test
-	public void TestIstDreieckFalseUndABFalseUndBCFalse() {
+	public void TestIstNurDreieckTrue() {
+		dreieck.setSeite_a(3);
+		dreieck.setSeite_b(3);
+		dreieck.setSeite_c(5);
+
+		assertFalse(dreieck.gleichSeitig());
+	}
+
+	@Test
+	public void TestIstNurDreieckFalse() {
+		dreieck.setSeite_a(0);
+		dreieck.setSeite_b(0);
+		dreieck.setSeite_c(0);
+
+		assertFalse(dreieck.gleichSeitig());
+	}
+
+	@Test
+	public void TestIstABFalseUndBCFalse() {
 		dreieck.setSeite_a(1);
 		dreieck.setSeite_b(2);
 		dreieck.setSeite_c(3);
@@ -31,43 +49,25 @@ public class TestIstDreieckGleichseitig {
 	}
 
 	@Test
-	public void TestIstDreieckFalseUndABFalseUndBCTrue() {
-		dreieck.setSeite_a(1);
-		dreieck.setSeite_b(2);
-		dreieck.setSeite_c(2);
+	public void TestIstABFalseUndBCTrue() {
+		dreieck.setSeite_a(2);
+		dreieck.setSeite_b(3);
+		dreieck.setSeite_c(3);
 
 		assertFalse(dreieck.gleichSeitig());
 	}
 
 	@Test
-	public void TestIstDreieckFalseUndABTrueUndBCFalse() {
-		dreieck.setSeite_a(1);
-		dreieck.setSeite_b(1);
-		dreieck.setSeite_c(3);
-
-		assertFalse(dreieck.gleichSeitig());
-	}
-
-	@Test(expected = AssertionError.class)
-	public void TestIstDreieckTrueUndABFalseUndBCFalse() {
-		dreieck.setSeite_a(1);
-		dreieck.setSeite_b(2);
-		dreieck.setSeite_c(3);
-
-		assertTrue(dreieck.gleichSeitig());
-	}
-
-	@Test(expected = AssertionError.class)
-	public void TestIstDreieckTrueUndABTrueUndBCFalse() {
+	public void TestABTrueUndBCFalse() {
 		dreieck.setSeite_a(2);
 		dreieck.setSeite_b(2);
 		dreieck.setSeite_c(3);
 
-		assertTrue(dreieck.gleichSeitig());
+		assertFalse(dreieck.gleichSeitig());
 	}
 
 	@Test
-	public void TestIstDreieckTrueUndABTrueUndBCTrue() {
+	public void TestIstABTrueUndBCTrue() {
 		dreieck.setSeite_a(1);
 		dreieck.setSeite_b(1);
 		dreieck.setSeite_c(1);
