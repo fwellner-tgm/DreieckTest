@@ -22,7 +22,7 @@ public class TestIstDreieckGleichseitig {
 	}
 
 	@Test
-	public void TestIstNurDreieckTrue() {
+	public void istNurDreieckTrue() {
 		dreieck.setSeite_a(3);
 		dreieck.setSeite_b(3);
 		dreieck.setSeite_c(5);
@@ -31,7 +31,7 @@ public class TestIstDreieckGleichseitig {
 	}
 
 	@Test
-	public void TestIstNurDreieckFalse() {
+	public void istNurDreieckFalse() {
 		dreieck.setSeite_a(0);
 		dreieck.setSeite_b(0);
 		dreieck.setSeite_c(0);
@@ -40,7 +40,7 @@ public class TestIstDreieckGleichseitig {
 	}
 
 	@Test
-	public void TestIstABFalseUndBCFalse() {
+	public void istABFalseUndBCFalse() {
 		dreieck.setSeite_a(1);
 		dreieck.setSeite_b(2);
 		dreieck.setSeite_c(3);
@@ -49,7 +49,7 @@ public class TestIstDreieckGleichseitig {
 	}
 
 	@Test
-	public void TestIstABFalseUndBCTrue() {
+	public void istABFalseUndBCTrue() {
 		dreieck.setSeite_a(2);
 		dreieck.setSeite_b(3);
 		dreieck.setSeite_c(3);
@@ -58,7 +58,7 @@ public class TestIstDreieckGleichseitig {
 	}
 
 	@Test
-	public void TestABTrueUndBCFalse() {
+	public void istABTrueUndBCFalse() {
 		dreieck.setSeite_a(2);
 		dreieck.setSeite_b(2);
 		dreieck.setSeite_c(3);
@@ -67,7 +67,7 @@ public class TestIstDreieckGleichseitig {
 	}
 
 	@Test
-	public void TestIstABTrueUndBCTrue() {
+	public void istABTrueUndBCTrue() {
 		dreieck.setSeite_a(1);
 		dreieck.setSeite_b(1);
 		dreieck.setSeite_c(1);

@@ -21,7 +21,7 @@ public class TestIstDreieckRechtWinkelig {
 	}
 
 	@Test
-	public void TestIstNurDreieckTrue() {
+	public void istNurDreieckTrue() {
 		this.dreieck.setSeite_a(3);
 		this.dreieck.setSeite_b(2);
 		this.dreieck.setSeite_c(4);
@@ -30,7 +30,7 @@ public class TestIstDreieckRechtWinkelig {
 	}
 
 	@Test
-	public void TestIstNurDreieckFalse() {
+	public void istNurDreieckFalse() {
 		this.dreieck.setSeite_a(0);
 		this.dreieck.setSeite_b(0);
 		this.dreieck.setSeite_c(0);
@@ -39,7 +39,7 @@ public class TestIstDreieckRechtWinkelig {
 	}
 
 	@Test
-	public void TestIstABFalseUndACFalse() {
+	public void istABFalseUndACFalse() {
 		this.dreieck.setSeite_a(2);
 		this.dreieck.setSeite_b(3);
 		this.dreieck.setSeite_c(4);
@@ -48,7 +48,7 @@ public class TestIstDreieckRechtWinkelig {
 	}
 
 	@Test
-	public void TestIstABFalseUndACTrue() {
+	public void istABFalseUndACTrue() {
 		this.dreieck.setSeite_a(3);
 		this.dreieck.setSeite_b(4);
 		this.dreieck.setSeite_c(2);
@@ -57,7 +57,7 @@ public class TestIstDreieckRechtWinkelig {
 	}
 
 	@Test
-	public void TestIstABTrueUndACFalse() {
+	public void istABTrueUndACFalse() {
 		this.dreieck.setSeite_a(2);
 		this.dreieck.setSeite_b(1);
 		this.dreieck.setSeite_c(3);
@@ -66,7 +66,7 @@ public class TestIstDreieckRechtWinkelig {
 	}
 
 	@Test
-	public void TestIstABTrueUndACTrue() {
+	public void istABTrueUndACTrue() {
 		this.dreieck.setSeite_a(5);
 		this.dreieck.setSeite_b(3);
 		this.dreieck.setSeite_c(4);
@@ -75,7 +75,7 @@ public class TestIstDreieckRechtWinkelig {
 	}
 
 	@Test
-	public void TestIstBAFalseUndBCFalse() {
+	public void istBAFalseUndBCFalse() {
 		this.dreieck.setSeite_a(3);
 		this.dreieck.setSeite_b(2);
 		this.dreieck.setSeite_c(3);
@@ -84,7 +84,7 @@ public class TestIstDreieckRechtWinkelig {
 	}
 
 	@Test
-	public void TestIstCBFalseUndCAFalse() {
+	public void istCBFalseUndCAFalse() {
 		this.dreieck.setSeite_a(3);
 		this.dreieck.setSeite_b(3);
 		this.dreieck.setSeite_c(2);

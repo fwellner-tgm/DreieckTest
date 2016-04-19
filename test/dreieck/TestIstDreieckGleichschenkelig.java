@@ -22,7 +22,7 @@ public class TestIstDreieckGleichschenkelig {
 	}
 
 	@Test
-	public void TestIstNurDreieckTrue() {
+	public void istNurDreieckTrue() {
 		this.dreieck.setSeite_a(3);
 		this.dreieck.setSeite_b(2);
 		this.dreieck.setSeite_c(4);
@@ -31,7 +31,7 @@ public class TestIstDreieckGleichschenkelig {
 	}
 
 	@Test
-	public void TestIstNurDreieckFalse() {
+	public void istNurDreieckFalse() {
 		this.dreieck.setSeite_a(0);
 		this.dreieck.setSeite_b(0);
 		this.dreieck.setSeite_c(0);
@@ -40,7 +40,7 @@ public class TestIstDreieckGleichschenkelig {
 	}
 
 	@Test
-	public void TestIstDreieckTrueUndAGleichB() {
+	public void istDreieckTrueUndAGleichB() {
 		dreieck.setSeite_a(2);
 		dreieck.setSeite_b(2);
 		dreieck.setSeite_c(3);
@@ -49,7 +49,7 @@ public class TestIstDreieckGleichschenkelig {
 	}
 
 	@Test
-	public void TestIstDreieckTrueUndBGleichC() {
+	public void istDreieckTrueUndBGleichC() {
 		dreieck.setSeite_a(3);
 		dreieck.setSeite_b(2);
 		dreieck.setSeite_c(2);
@@ -58,7 +58,7 @@ public class TestIstDreieckGleichschenkelig {
 	}
 
 	@Test
-	public void TestIstDreieckTrueUndAGleichC() {
+	public void istDreieckTrueUndAGleichC() {
 		dreieck.setSeite_a(2);
 		dreieck.setSeite_b(3);
 		dreieck.setSeite_c(2);
